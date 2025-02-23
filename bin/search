@@ -1,0 +1,7 @@
+set -e
+
+if [ -x /usr/bin/ack-grep ]; then
+    ack-grep -i "$@"
+else
+    ack -i "$@"
+fi
